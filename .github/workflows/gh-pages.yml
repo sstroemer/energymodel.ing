@@ -1,4 +1,4 @@
-name: deploy energmodel.ing to GitHub pages
+name: gh-pages (build & deploy)
 
 on:
   push:
