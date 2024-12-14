@@ -45,19 +45,11 @@ jobs:
       - name: Setup pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Debug submodules
-        run: git submodule status
-      - name: Init submodules
-        run: git submodule init
-      - name: Get theme
-        run: git submodule update --recursive --depth=1
-      - name: Update theme to latest commit
-        run: git submodule update --remote --merge
-      - name: List themes directory
+      - name: Get and update theme
         run: |
-          echo "Working directory: $(pwd)"
-          ls -la
-          ls -la themes
+          git submodule init
+          git submodule update --recursive --depth=1
+          git submodule update --remote --merge
       - name: Build with Hugo
         run: |
           hugo \
