@@ -3,12 +3,6 @@ Content of the energymodel.ing blog/page.
 
 ## Guide
 
-Adding a page to the main menu:
-see: https://gohugo.io/content-management/menus/#define-in-front-matter
-
-
-## Guide
-
 This section contains some commonly used prepared "X", that may be helpful.
 
 **Set-up of pre-commit and dependencies**  
