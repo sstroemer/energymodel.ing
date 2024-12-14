@@ -55,7 +55,10 @@ jobs:
       - name: Update theme to latest commit
         run: git submodule update --remote --merge
       - name: List themes directory
-        run: ls -la themes
+        run: |
+          echo "Working directory: $(pwd)"
+          ls -la
+          ls -la themes
       - name: Build with Hugo
         run: |
           hugo \
