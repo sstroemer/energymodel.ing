@@ -1,0 +1,112 @@
+baseURL: https://energymodel.ing/
+languageCode: en-us
+title: energymodel.ing
+copyright: "© Stefan Strömer"
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# These get shown on the "front" page.
+mainsections:
+  - digest
+  - general
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      tag: topics
+      # category: categories
+      # series: series
+    menu:
+      main:
+        - name: Search
+          url: search/
+          weight: 1
+        - name: Categories
+          url: categories/
+          weight: 2
+        - name: Topics
+          url: topics/
+          weight: 3
+        - name: Archive
+          url: archive
+          weight: 4
+        - name: GitHub
+          url: https://github.com/sstroemer/energymodel.ing
+          weight: 5
+
+params:
+  env: production
+  title: energymodel.ing
+  description: On modeling, energy systems, and other things.
+  keywords: [Blog]
+  author: Stefan Strömer
+  # images: []
+  dateFormat: January 1, 2006
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  showReadingTime: true
+  showShareButtons: true
+  showPostNavLinks: false
+  showBreadCrumbs: true
+  showCodeCopyButtons: true
+  showWordCount: true
+  showRssButtonInSectionTermList: false
+  showAllPagesInArchive: true
+  showPageNums: true
+
+  useHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hideMeta: false
+  hideSummary: false
+  showToc: true
+  tocOpen: false
+
+  assets:
+    disableHLJS: true
+    # disableFingerprinting: true
+    # favicon: "<link / abs url>"
+  
+  homeInfoParams:
+    Title: energymodel.ing
+    Content: |
+      On modeling, energy systems, and other things.  
+      Read the latest posts below or check out the <u>[archive](/archive/)</u> for more.
+
+  socialIcons:
+    - name: GitHub
+      url: https://github.com/sstroemer
+    - name: LinkedIn
+      url: https://at.linkedin.com/in/stefan-stroemer
+
+  editPost:
+    URL: "https://github.com/sstroemer/energymodel.ing/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: false
+    lineNos: true
+    noClasses: true
+    style: monokai
