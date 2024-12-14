@@ -19,8 +19,6 @@ pre-commit install
 sudo snap install vale
 ```
 
-Additionally, the `Vale VSCode` extension can be helpful.
-
 **Creating a new article**  
 ```shell
 hugo new content posts/some-title.md
