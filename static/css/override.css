@@ -6,6 +6,8 @@
     --code-bg: #e9e9e9;
     --border: #9e9e9e;
     --radius: 6px;
+
+    --front-page: rgb(65, 65, 65);
 }
 
 body {
@@ -33,4 +35,56 @@ body {
 
 .post-description {
     font-style: italic;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Re-styling the title on the front page, and reducing empty space on the top.                                       */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.first-entry .entry-header h1 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--front-page);
+}
+.first-entry .entry-content {
+    margin-top: 0;
+    color: var(--front-page);
+}
+.first-entry .home-info {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Modify footer, and change "min-height" of "main" to keep footer at fixed location.                                 */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+:root {
+    --footer-height: 96px;
+}
+.footer {
+    border-top: 1px solid var(--border);
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 0;
+    margin-bottom: 2px;
+}
+@media (max-width: 612px) {
+    :root {
+        --footer-height: 144px;
+    }
+}
+.main {
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+@media (max-width: 580px) {
+    .main {
+        min-height: calc(100vh - 2 * var(--header-height) - var(--footer-height));
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Separator below menu/header.                                                                                       */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.nav {
+    border-bottom: 1px solid var(--border);
 }
