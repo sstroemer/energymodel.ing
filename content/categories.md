@@ -14,3 +14,5 @@ Follow any of the links below, down into a rabbit hole --- but do not blame me i
   _A place for those (posts) that do not belong --- outcasts, wanderers, visionaries, and misfits._
 - [The paper digest](/digest/):  
   _Thoughts, comments, ideas, or useless notes on papers that I may have partially read._
+- [Do you like math(s)?](/math/):  
+  _Various topics that loosely relate to math, or maybe even contain numbers._
