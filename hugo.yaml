@@ -89,9 +89,12 @@ params:
     # favicon: "<link / abs url>"
   
   homeInfoParams:
-    Title: energymodel.ing
-    Content: |
-      On modeling, energy systems, and other things. Read the latest posts below or check out the <b><u>[archive](/archive/)</u></b> for more.
+    title: "**_energymodel.ing_** --- _on modeling, energy systems, and other things._"
+    content: |
+      &nbsp; <br>
+      Read the latest posts below or check out the
+      <u>[archive](/archive/)</u> to see all posts, the <u>[categories](/categories/)</u> for a high-level view, the
+      <u>[topics](/topics/)</u> for detailed tags, or just <u>[search](/search/)</u> for something specific.
 
   footer:
     text: Opinions, statements, and views are my own and do not represent those of any employer --- or any academic affiliation --- past, present, or future.
