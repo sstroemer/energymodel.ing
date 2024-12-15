@@ -16,7 +16,7 @@ mainsections:
   - general
 
 minify:
-  disableXML: true
+  disableXML: false
   minifyOutput: true
 
 languages:
@@ -44,6 +44,12 @@ languages:
         - name: GitHub
           url: https://github.com/sstroemer/energymodel.ing
           weight: 5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
 
 params:
   env: production
