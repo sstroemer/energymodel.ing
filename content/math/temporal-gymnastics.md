@@ -12,8 +12,6 @@ tocOpen: false
 
 Solving large-scale <abbr title="Energy System Optimization Models">ESOMs</abbr> can be hard, time-consuming, both, or neither. Often researchers resort to changing the temporal structure --- bending complex-looking formulations like a mathematical gymnast. Let's delve into some of their moves.
 
-<!--more-->
-
 ## Literature
 
 The following entries of my [paper digest](/digest/) discuss related works:
