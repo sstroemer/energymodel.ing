@@ -10,6 +10,10 @@
     --front-page: rgb(65, 65, 65);
 }
 
+.dark {
+    --front-page: rgb(187, 187, 187)
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
