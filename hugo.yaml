@@ -40,9 +40,9 @@ languages:
         - name: Topics
           url: topics/
           weight: 3
-        - name: Archive
-          url: archive
-          weight: 4
+        # - name: Archive
+        #   url: archive
+        #   weight: 4
         - name: GitHub
           url: https://github.com/sstroemer/energymodel.ing
           weight: 5
@@ -91,8 +91,7 @@ params:
   homeInfoParams:
     Title: energymodel.ing
     Content: |
-      On modeling, energy systems, and other things.  
-      Read the latest posts below or check out the <u>[archive](/archive/)</u> for more.
+      On modeling, energy systems, and other things. Read the latest posts below or check out the <b><u>[archive](/archive/)</u></b> for more.
 
   socialIcons:
     - name: GitHub
