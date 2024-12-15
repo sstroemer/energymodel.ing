@@ -16,5 +16,6 @@ The paper by Kotzur, Markewitz, Robinius, and Stolten is amongst the most refere
 
 Multiple open-source <abbr title="Energy System Optimization Models">ESOMs</abbr> build upon their work[^1].
 
+> Check out [_"the art of temporal gymnastics"_](../math/temporal-gymnastics.md) if you are looking for further thoughts around similar approaches.
 
 [^1]: Kotzur, L., Markewitz, P., Robinius, M., & Stolten, D. (2018). Time series aggregation for energy system design: Modeling seasonal storage. _Applied Energy, 213_, 123-135. [doi.org/10.1016/j.apenergy.2018.01.023](https://doi.org/10.1016/j.apenergy.2018.01.023)
